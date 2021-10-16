@@ -1,5 +1,5 @@
 {
-    "name": "@roadmanjs/log",
+    "name": "@roadmanjs/logs",
     "version": "0.0.0",
     "description": "A Roadman for logs",
     "main": "dist/index.js",
