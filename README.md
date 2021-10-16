@@ -1,15 +1,38 @@
 
 <p align="center">
-  <h1 align="center"> Roadman - Template  </h1>
+  <h1 align="center"> Roadman - Log </h1>
 </p>
 
 
-<div align="center">
+## A roadman for logs using debug and chalk.
 
-<img width="500px" src="./docs/starterpack.jpeg"></img>
+### How to use
+```
+yarn add @roadmanjs/log
+```
 
+anywhere.ts
+```ts
+import {log, chalk} from '@roadmanjs/log';
 
-</div>
+log("somevalue", "normal text")
+log("somevalue", chalk.red("red text"))
+```
 
+or 
 
-## Build your roadman packages with friends.
+app.ts
+```ts
+import {roadman} from 'roadman'
+import {logRoadman} from '@roadmanjs/log';
+
+await roadman({
+  roadmen: [logRoadman]
+});
+```
+
+#### Env required
+```sh
+ROADMAN=myappname
+DEBUG=myappname* 
+```

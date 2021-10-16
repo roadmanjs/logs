@@ -1,7 +1,7 @@
 {
-    "name": "roadman-template",
+    "name": "@roadmanjs/log",
     "version": "0.0.0",
-    "description": "My cool roadman package",
+    "description": "A Roadman for logs",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -65,9 +65,11 @@
         "typescript": "^4.4.3"
     },
     "peerDependencies": {
+        "@roadmanjs/core": ">=0.0.3",
         "typescript": ">=2.0"
     },
     "dependencies": {
+        "@roadmanjs/core": "^0.0.3",
         "chalk": "^4.1.0",
         "debug": "^4.3.1",
         "dotenv": "^8.2.0",
